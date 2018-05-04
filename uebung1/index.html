@@ -1,0 +1,19 @@
+<html ng-app="tutorialApp">
+<head>
+  <meta charset="utf8mb4" />
+  <title>AngularJS Übung</title>
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+</head>
+<body>
+  <h1>AngularJS Übung</h1>
+  <table class="table" ng-controller="ArticlesCtrl">
+    <tr ng-repeat="article in articles | filter:search">
+      <td>{{article.id}}</td>
+      <td>{{article.name}}</td>
+      <td>{{article.price}}</td>
+    </tr>
+  </table>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
