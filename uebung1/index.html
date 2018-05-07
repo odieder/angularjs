@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 </head>
 <body>
+  <div class="container">
   <h1>AngularJS Übung</h1>
   <table class="table" ng-controller="ArticlesCtrl">
     <tr ng-repeat="article in articles | filter:search">
@@ -14,6 +15,8 @@
     </tr>
   </table>
   <a href="https://angularjs.de/artikel/angularjs-tutorial-deutsch/" target="new">AngularJS Tutorial</a>
+  </div>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
   <script src="./app.js"></script>
 </body>
